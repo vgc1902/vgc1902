@@ -31,3 +31,9 @@ jobs:
           directory: /
           file_name: .env
       - run: npm run update-post
+      - run: |
+          git config user.name vgc1902
+          git config user.email vgc1902@gmail.com
+          git add .
+          git commit -m "Update README with latest post"
+          git push origin main
