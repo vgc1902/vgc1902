@@ -1,14 +1,15 @@
 const fs = require("fs").promises;
 const firebase = require("firebase");
+const dotenv = require("dotenv").config();
 
 const firebaseConfig = {
-	apiKey: "AIzaSyBLIWhyxo1EDDP8k3rrtWo1uLjZv11kfFg",
-	authDomain: "ikode-bf9f5.firebaseapp.com",
-	databaseURL: "https://ikode-bf9f5.firebaseio.com",
-	projectId: "ikode-bf9f5",
-	storageBucket: "ikode-bf9f5.appspot.com",
-	messagingSenderId: "183529867692",
-	appId: "1:183529867692:web:c8f5b69d161e8c3b8a1209",
+	apiKey: dotenv.parsed.API_KEY,
+	authDomain: dotenv.parsed.AUTH_DOMAIN,
+	databaseURL: dotenv.parsed.DATABASE_URL,
+	projectId: dotenv.parsed.PROJECT_ID,
+	storageBucket: dotenv.parsed.STORAGE_BUCKET,
+	messagingSenderId: dotenv.parsed.MESSAGING_SENDER_ID,
+	appId: dotenv.parsed.APP_ID,
 };
 
 // Initialize Firebase
