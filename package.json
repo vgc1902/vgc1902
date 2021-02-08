@@ -1,0 +1,25 @@
+{
+	"name": "vgc1902",
+	"version": "1.0.0",
+	"description": "Hi, I'm Victor Garcia a frontend developer.",
+	"main": "index.js",
+	"scripts": {
+		"update-post": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vgc1902/vgc1902.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/vgc1902/vgc1902/issues"
+	},
+	"homepage": "https://github.com/vgc1902/vgc1902#readme",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"firebase": "^8.2.6"
+	}
+}
